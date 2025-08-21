@@ -71,6 +71,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Image)
     Selection.setPosition(29, 44)
 })
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    Selection.setPosition(66, 50)
+})
 let Selection: Sprite = null
 let nerdBig: Sprite = null
 let Start_Text: Sprite = null
@@ -78,5 +81,5 @@ let Abutton: Sprite = null
 scene.setBackgroundColor(15)
 Abutton = sprites.create(assets.image`A Button`, SpriteKind.Image)
 Start_Text = sprites.create(assets.image`Start Text`, SpriteKind.Image)
-Abutton.setPosition(44, 98)
 Start_Text.setPosition(70, 99)
+Abutton.setPosition(44, 98)
