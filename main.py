@@ -6,7 +6,6 @@ class SpriteKind:
 
 def on_a_pressed():
     global nerdBig, Selection
-    Start_Text: Sprite = None
     sprites.destroy(Start_Text)
     sprites.destroy(Abutton)
     nerdBig = sprites.create(assets.image("""
@@ -78,10 +77,20 @@ def on_a_pressed():
     Selection.set_position(29, 44)
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
+def on_right_pressed():
+    Selection.set_position(66, 50)
+controller.right.on_event(ControllerButtonEvent.PRESSED, on_right_pressed)
+
 Selection: Sprite = None
 nerdBig: Sprite = None
+Start_Text: Sprite = None
 Abutton: Sprite = None
 scene.set_background_color(15)
 Abutton = sprites.create(assets.image("""
     A Button
     """), SpriteKind.Image)
+Start_Text = sprites.create(assets.image("""
+    Start Text
+    """), SpriteKind.Image)
+Start_Text.set_position(70, 99)
+Abutton.set_position(44, 98)
