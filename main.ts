@@ -4,7 +4,6 @@ namespace SpriteKind {
     export const Image = SpriteKind.create()
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    let Start_Text: Sprite = null
     sprites.destroy(Start_Text)
     sprites.destroy(Abutton)
     nerdBig = sprites.create(assets.image`Nerd`, SpriteKind.Image)
@@ -74,6 +73,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 let Selection: Sprite = null
 let nerdBig: Sprite = null
+let Start_Text: Sprite = null
 let Abutton: Sprite = null
 scene.setBackgroundColor(15)
 Abutton = sprites.create(assets.image`A Button`, SpriteKind.Image)
+Start_Text = sprites.create(assets.image`Start Text`, SpriteKind.Image)
+Abutton.setPosition(44, 98)
+Start_Text.setPosition(70, 99)
