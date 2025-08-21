@@ -1,0 +1,17 @@
+{
+    "image2": {
+        "data": "hwQeABAAAAAAABEAAAAAAAAQAAEQAAAAABAAARAAAAAAEAABEAAAAAAAABABAAAAABAAAAAAAAAAEBEREQAAAAAQAAAAAAAAAAAAEREAAAAAABEQAAAAAAAQABAAAAAAAAAREAAAAAAAAAAREQAAAAAAAAAAAAAAABAREREAAAAAEAABAAAAAAAQAAEAAAAAAAAREBEAAAAAAAAAAAAAAAAQAAAAAAAAABAREREAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Start Text"
+    },
+    "image1": {
+        "data": "hwQQABAAAAAAAP///w8AAADwiIiI+AAAAI+IiIiIDwDwiIiIiIj4AI+IiIiIiIgPj4iI////iA+PiP+Ij4iID4/4iIiPiIgPj/iIiI+IiA+PiP+Ij4iID4+IiP///4gPj4iIiIiIiA/wiIiIiIj4DwCPiIiIiA8AAPCIiIj4AAAAAP///w8AAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "A Button"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
