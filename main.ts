@@ -248,3 +248,4 @@ Start_Text = sprites.create(assets.image`Start Text`, SpriteKind.Image)
 Start_Text.setPosition(70, 99)
 Abutton.setPosition(44, 98)
 page = 0
+Abutton.sayText(":)")
