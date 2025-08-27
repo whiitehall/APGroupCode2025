@@ -196,6 +196,24 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             `, SpriteKind.Image)
         Selection.setPosition(29, 44)
         page = 1
+    } else if (page == 1) {
+        sprites.destroy(BullyBig)
+        sprites.destroy(nerdBig)
+        sprites.destroy(emoBig)
+        sprites.destroy(Selection)
+        if (Character == 1) {
+        	
+        }
+        if (Character == 2) {
+        	
+        }
+        if (Character == 3) {
+        	
+        }
+        page = 2
+    } else {
+        game.showLongText("placeholder", DialogLayout.Bottom)
+        page = 3
     }
 })
 browserEvents.Three.onEvent(browserEvents.KeyEvent.Pressed, function () {
