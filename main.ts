@@ -196,31 +196,27 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             `, SpriteKind.Image)
         Selection.setPosition(29, 44)
         page = 1
-        Abutton = sprites.create(assets.image`A Button`, SpriteKind.Image)
-        Selection.setPosition(29, 44)
-    }
-    if (page == 1) {
-        page = 2
     }
 })
 browserEvents.Three.onEvent(browserEvents.KeyEvent.Pressed, function () {
     if (page == 1) {
         Selection.setPosition(120, 44)
+        Character = 3
     }
-})
-controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-	
 })
 browserEvents.Two.onEvent(browserEvents.KeyEvent.Pressed, function () {
     if (page == 1) {
         Selection.setPosition(75, 44)
+        Character = 3
     }
 })
 browserEvents.One.onEvent(browserEvents.KeyEvent.Pressed, function () {
     if (page == 1) {
         Selection.setPosition(29, 44)
+        Character = 1
     }
 })
+let Character = 0
 let Selection: Sprite = null
 let emoBig: Sprite = null
 let BullyBig: Sprite = null
@@ -233,3 +229,4 @@ Abutton = sprites.create(assets.image`A Button`, SpriteKind.Image)
 Start_Text = sprites.create(assets.image`Start Text`, SpriteKind.Image)
 Start_Text.setPosition(70, 99)
 Abutton.setPosition(44, 98)
+page = 0
