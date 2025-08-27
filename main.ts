@@ -225,7 +225,7 @@ browserEvents.Three.onEvent(browserEvents.KeyEvent.Pressed, function () {
 browserEvents.Two.onEvent(browserEvents.KeyEvent.Pressed, function () {
     if (page == 1) {
         Selection.setPosition(75, 44)
-        Character = 3
+        Character = 2
     }
 })
 browserEvents.One.onEvent(browserEvents.KeyEvent.Pressed, function () {
