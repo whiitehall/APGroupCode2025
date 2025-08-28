@@ -3,6 +3,9 @@ namespace SpriteKind {
     export const npc2 = SpriteKind.create()
     export const Image = SpriteKind.create()
 }
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (page == 0) {
         sprites.destroy(Start_Text)
@@ -202,18 +205,25 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         sprites.destroy(emoBig)
         sprites.destroy(Selection)
         if (Character == 1) {
-        	
+            Mental = 2
+            Organisation = 3
         }
         if (Character == 2) {
-        	
+            Mental = 3
+            Organisation = 1
         }
         if (Character == 3) {
-        	
+            Mental = 1
+            Organisation = 2
         }
         page = 2
-    } else {
+    } else if (page == 2) {
         game.showLongText("placeholder", DialogLayout.Bottom)
         page = 3
+        Organisation += 2
+        Organisation += 1
+    } else {
+    	
     }
 })
 browserEvents.Three.onEvent(browserEvents.KeyEvent.Pressed, function () {
@@ -234,6 +244,8 @@ browserEvents.One.onEvent(browserEvents.KeyEvent.Pressed, function () {
         Character = 1
     }
 })
+let Organisation = 0
+let Mental = 0
 let Character = 0
 let Selection: Sprite = null
 let emoBig: Sprite = null
